@@ -1,0 +1,319 @@
+/*
+Theme Name: Hextal WP
+Author: converted by Stefan Bot
+Description: html template converted to WordPress
+Version: 0.0.1
+Tags: work
+*/
+/*
+ http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	background-color: #282828;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.header {
+	height: 70px;
+	margin: 0 auto;
+	width: 80%;
+	background-color: #323232;
+}
+nav {
+	height: 70px;
+	width: 35%;
+	margin: 0 auto;
+}
+@media (max-width: 1280px) {
+	nav {
+		font-family: sans-serif;
+		width: 55%;
+	}
+	
+}
+li {
+	overflow: auto;
+	margin-left: 5px;
+	display: inline-block;
+}
+@media (max-width: 1280px) {
+	ul {
+		padding-top: 5%;
+	}
+	
+}
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+}
+@media (max-width: 1440px) {
+	a {
+		font-size: 12px;
+	}
+}
+@media (max-width: 1366px) {
+	a {
+		font-size: 10px;
+	}
+}
+@media (max-width: 1280px) {
+	a {
+		font-size: 25px;
+	}
+	
+}
+@media (max-width: 1270px) {
+	a {
+		font-size: 12px;
+	}
+	
+}
+a:hover {
+	color: #2eb398;
+}
+.header img {
+	margin-top: 6.5px;
+	padding: 0 20px 0 20px;
+}
+@media (max-width: 1280px) {
+	.header img {
+		display: none;
+	}
+	
+}
+.page {
+	padding-bottom: 50px;
+}
+@media (max-width: 1270px) {
+	.page {
+		padding-bottom: 0px;
+	}
+	
+}
+.midimg {
+	background-color: white;
+	width: 80%;
+	margin: 0 auto;
+}
+.midimg img {
+	width: 100%;
+	margin-top: 2% !important;
+}
+@media (max-width: 1440px) {
+	.midimg img {
+		margin-top: 3% !important;
+	}
+}
+.about {
+	background-color: #2eb398;
+	width: 80%;
+	margin: 0 auto;
+	height: auto;
+	min-height: 350px;
+}
+.aboutwrap {
+	padding-top: 5%;
+	width: 80%;
+	margin: 0 auto;
+}
+.smithimg {
+	background: url("images/smithface.jpg");
+	width: 180px;
+	height: 206px;
+	margin-right: 2%;
+}
+.abouttext {
+	padding-top: 15px;
+}
+.abouttext h1 {
+	margin-bottom: 10px;
+	font-family: sans-serif;
+	color: white;
+	font-size: 40px;
+
+} 
+@media (max-width: 1270px) {
+	.abouttext h1 {
+		font-size: 25px;
+	}
+	
+}
+.abouttext h2 {
+	color: #20816d;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.abouttext p {
+	color: white;
+	line-height: 20px;
+	margin-bottom: 2%;
+}
+.social li {
+	margin: -2px;
+}
+.social {
+	float: right;
+}
+.contact {
+	background-color: #323232;
+	width: 80%;
+	height: auto;
+	margin: 0 auto;
+	min-height: 500px;
+}
+.contactwrap {
+	width: 90%;
+	margin: 0 auto;
+}
+input, textarea {
+	margin-bottom: 1.5%;
+	display: block;
+}
+input[type=text], textarea {
+	padding: 10px;
+	color: white;
+	resize: none;
+	border: none;
+	width: 100%;
+	background-color: #454545;
+}
+input[type=text] {
+	height: 35px;
+}
+
+input[type=submit] {
+	float: right;
+	font-weight: bold;
+	color: white;
+	background-color: #2eb398;
+	border: none;
+	padding: 1% 2.5% 1% 2.5%;
+
+}
+textarea {
+	height: 200px;
+}
+.contact h1 {
+	padding: 1% 1% 1% 0%;
+	color: white;
+	font-size: 35px;
+}
+@media (max-width: 1270px) {
+	.contact h1 {
+		font-size: 20px;
+	}
+	
+}
+.contact h2 {
+	margin-bottom: 1%;
+	font-size: 25px;
+	color: #bebebe;
+}
+@media (max-width: 1270px) {
+	.contact h2 {
+		font-size: 15px;
+	}
+	
+}
+.contacttext {
+	line-height: -8%;
+	margin-right: 25%;
+	margin-top: 6%;
+	float: right;
+	width: 25%;
+	color: white;
+}
+@media (max-width: 1440px) {
+	.contacttext {
+		width: 20%;
+	}
+}
+@media (max-width: 1366px) {
+	.contacttext {
+		display: none;
+	}
+}
+strong {
+	font-weight: bold;
+}
+.address {
+	width: 100%;
+	margin-top: 10%;
+}
+.address li {
+	padding-left: 8%;
+	margin-bottom: 10%;
+}
+.add1 {
+	background: url("images/address.jpg");
+	background-position: left;
+	background-repeat: no-repeat;
+
+}
+.phonenr {
+	background: url("images/phone.jpg");
+	background-repeat: no-repeat;
+	background-position: left;
+
+}
+.mailad {
+	background: url("images/mail.jpg");
+	background-size: 15px 14px !important; 
+	background-repeat: no-repeat;
+	background-position: left;
+
+}
+.footer {
+	color: #3d3d3d;
+	padding: 10px;
+	background-color: #222222;
+	margin: 0 auto;
+	width: 80%;
+	height: 40px;
+}
+.footer p {
+	margin-left: 3%;
+}
